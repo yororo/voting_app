@@ -14,13 +14,13 @@ if($id != '' && $rating != ''){
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="index.php" class="brand-logo">
+            <a href="./" class="brand-logo">
                 <?php 
                 echo $configurationModel->getSiteName();
                 ?>
             </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.php">HOME</a></li>
+            <li><a href="./">HOME</a></li>
           </ul>
         </div>
     </nav>

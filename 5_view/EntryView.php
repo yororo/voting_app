@@ -26,9 +26,9 @@ class EntryView {
                     <p>
                     ".$entry->Description."
                     </p>
-                    <a class='dropdown-button btn vote-dropdown' href='#' data-activates='vote".$this->entryId."'>Vote</a>
+                    <a class='dropdown-button btn vote-dropdown' href='#' data-activates='vote".$entry->Id."'>Vote</a>
 
-                    <ul id='vote".$this->entryId."' class='dropdown-content'>
+                    <ul id='vote".$entry->Id."' class='dropdown-content'>
                         <li><a href='#' onclick='Vote(" . $entry->Id . ", 1);'>1</a></li>
                         <li class='divider'></li>
                         <li><a href='#' onclick='Vote(" . $entry->Id . ", 2);'>2</a></li>

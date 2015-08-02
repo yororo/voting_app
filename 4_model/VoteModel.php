@@ -5,6 +5,7 @@ class VoteModel {
     private $servername = "localhost";
     private $username = "root";
     private $password = "1234";
+    private $db_name = "votingapp";
     private $securityLevel = "";
 
     public function __construct($securityLevel) {
@@ -16,7 +17,7 @@ class VoteModel {
         $newEntry = $this->setNewEntryValues($entry, $rating);
 
         try {
-            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=votingapp", $this->username, $this->password);
+            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=" . $this->db_name, $this->username, $this->password);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->
@@ -32,7 +33,7 @@ class VoteModel {
 
     public function GetEntry($entryId) {
         try {
-            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=votingapp", $this->username, $this->password);
+            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=" . $this->db_name, $this->username, $this->password);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("SELECT * FROM entry_ratings WHERE identry_ratings=" . $entryId);
@@ -56,7 +57,7 @@ class VoteModel {
     
     public function GetAllEntries() {
         try {
-            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=votingapp", $this->username, $this->password);
+            $conn = new PDO("mysql:host=" . $this->servername . ";dbname=" . $this->db_name, $this->username, $this->password);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $stmt = $conn->prepare("SELECT * FROM entry_ratings");
