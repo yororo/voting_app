@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <siteName>Voting App</siteName>
+    
+    <!--
+    0 - no security
+    1 - max of 5 rating
+    -->
+    <securityLevel>1</securityLevel>
+</configuration>
