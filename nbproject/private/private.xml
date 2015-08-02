@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/webapps/voting_app/2_lib/EntryClass.php</file>
             <file>file:/C:/xampp/htdocs/webapps/voting_app/index.php</file>
             <file>file:/C:/xampp/htdocs/webapps/voting_app/3_controller/VoteController.php</file>
             <file>file:/C:/xampp/htdocs/webapps/voting_app/5_view/EntryView.php</file>
             <file>file:/C:/xampp/htdocs/webapps/voting_app/0_assets/js/dropdownController.js</file>
-            <file>file:/C:/xampp/htdocs/webapps/voting_app/5_view/main.php</file>
             <file>file:/C:/xampp/htdocs/webapps/voting_app/4_model/VoteModel.php</file>
+            <file>file:/C:/xampp/htdocs/webapps/voting_app/5_view/main.php</file>
+            <file>file:/C:/xampp/htdocs/webapps/voting_app/5_view/EntryListView.php</file>
         </group>
     </open-files>
 </project-private>
